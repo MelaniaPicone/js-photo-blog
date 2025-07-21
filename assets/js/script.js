@@ -12,14 +12,14 @@ const travelCards = resp.data;
 for (let i=0; i<6 ; i++){
 
 postCards.innerHTML += `
-<div class="col-sm-12 col-md-6 col-lg-4 mt-4 mb-3 ">
-<div class="card p-1 border-shadow" style="width: 16rem;">
+<div class="col-sm-12 col-md-6 col-lg-4 mt-4 mb-3">
+<div class="card mx-auto p-2 border-shadow" style="width: 250px;">
   <img src="./assets/img/pin.svg" class="pin">
   <img src="${travelCards[i].url}" class="img img-fluid" alt="immagine">
   <div class="card-body" style="height:110px;"">
-  <div class="id"><h5>${travelCards[i].id}</h5></div>
-  <div class="title"><h5>${travelCards[i].title}</h5></div>
-  <div class="date"><h6>${travelCards[i].date}</h6></div>
+  <div class="id"><p>${travelCards[i].id}</p></div>
+  <div class="title"><p>${travelCards[i].title}</p></div>
+  <div class="date"><p>${travelCards[i].date}</p></div>
   
   </div>
 </div>

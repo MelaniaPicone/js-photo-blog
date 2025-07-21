@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+.summer p {
+  font-family: "Edu TAS Beginner", cursive;
+  text-transform: uppercase; 
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.card p {
+  font-family: "Sometype Mono", monospace;
+ line-height: 10px;
+ font-size: 15px;
+
+}
+
+
 header {
   background-image: url(../img/wall.png);
 }
@@ -14,19 +29,19 @@ background-image: url(../img/cork.png);
 }
 
 .border-shadow {
-box-shadow: 10px 5px 10px #000;
-border-radius: 0px;
+box-shadow: 3px 5px 10px #000;
+ border-radius: 0 !important;
 }
 
 .row {
   position: relative;
 }
 
+
 .pin {
 position: absolute;
 width: 25px;
 top: -10px;
 left: 115px;
-
 
 }
