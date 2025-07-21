@@ -14,7 +14,7 @@ for (let i=0; i<6 ; i++){
 postCards.innerHTML += `
 <div class="col-sm-12 col-md-6 col-lg-4 mt-2 mb-2">
 <div class="card p-4" style="width: 18rem;">
-  <img src="${travelCards[i].img}" class="img img-fluid" alt="immagine">
+  <img src="${travelCards[i].url}" class="img img-fluid" alt="immagine">
   <div class="card-body">
   <div class="id"><h2>${travelCards[i].id}</h2></div>
   <div class="title"><h5>${travelCards[i].title}</h5></div>
