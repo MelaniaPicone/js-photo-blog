@@ -17,3 +17,16 @@ background-image: url(../img/cork.png);
 box-shadow: 10px 5px 10px #000;
 border-radius: 0px;
 }
+
+.row {
+  position: relative;
+}
+
+.pin {
+position: absolute;
+width: 25px;
+top: -10px;
+left: 115px;
+
+
+}
