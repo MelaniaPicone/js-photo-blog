@@ -18,7 +18,7 @@ postCards.innerHTML += `
 
   <img src="./assets/img/pin.svg" class="pin">
   <img src="${travelCards[i].url}" class="img img-fluid" alt="immagine">
-  <div class="card-body" style="height:110px;"">
+  <div class="card-body">
   <div class="id"><p>${travelCards[i].id}</p></div>
   <div class="title"><p>${travelCards[i].title}</p></div>
   <div class="date"><p>${travelCards[i].date}</p></div>
