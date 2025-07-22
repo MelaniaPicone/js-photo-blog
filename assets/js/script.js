@@ -2,6 +2,7 @@
 const postCards = document.getElementById('postcard');
 const overLay = document.getElementById('overlay');
 const button = document.getElementById('btn');
+const openPhoto = document.getElementById('openPhoto');
 
 // chiamata ajax
 axios.get(`https://lanciweb.github.io/demo/api/pictures/`).then ((resp) => {
@@ -19,7 +20,7 @@ postCards.innerHTML += `
 <div class="card mx-auto p-2 border-shadow" style="width: 250px;">
 
   <img src="./assets/img/pin.svg" class="pin">
-  <img src="${travelCards[i].url}" class="img img-fluid" alt="immagine">
+  <img src="${travelCards[i].url}" class="img img-fluid card-img" alt="immagine">
   <div class="card-body">
   <div class="date mt-2"><p>${travelCards[i].date}</p></div>
   <div class="title"><span>${travelCards[i].title}</span></div>
@@ -29,9 +30,18 @@ postCards.innerHTML += `
 </div>
 `
 }
-})
 
-// al clic su ogni card si apre l'overlay
+
+// ad ogni immagine è associata la sua apertura in overlay
+  const allCardImg = document.querySelectorAll('.card-img');
+
+  allCardImg.forEach((e) => {
+    e.addEventListener('click', () => {
+      openPhoto.src = allCardImg.src;
+    });
+  });
+
+  // al clic su ogni card si apre l'overlay
 postCards.addEventListener("click", (e) => {
 overLay.classList.remove('d-none');
 }
@@ -42,3 +52,5 @@ button.addEventListener("click", (e) => {
 overLay.classList.add('d-none');
 })
 
+
+  });
