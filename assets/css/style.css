@@ -30,6 +30,10 @@ background-image: url(../img/cork.png);
  font-size: 15px;
 }
 
+.card {
+  cursor: pointer;
+}
+
 /* card style */
 
 .border-shadow {
@@ -65,6 +69,7 @@ left: 115px;
   align-items: center;
   }
 
+
   #openPhoto {
   width: 400px;
   }
@@ -83,4 +88,5 @@ left: 115px;
   padding: 10px 15px;
   border-radius: 50%;
   border: 2px solid #000;
+  cursor: pointer;
   }

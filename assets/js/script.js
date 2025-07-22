@@ -1,5 +1,7 @@
-// recupero del dom in cui inserire il risultato della chiamata ajax
+// recupero degli elementi nel dom da usare nel js
 const postCards = document.getElementById('postcard');
+const overLay = document.getElementById('overlay');
+const button = document.getElementById('btn');
 
 // chiamata ajax
 axios.get(`https://lanciweb.github.io/demo/api/pictures/`).then ((resp) => {
@@ -27,3 +29,15 @@ postCards.innerHTML += `
 `
 }
 })
+
+// al clic su ogni card si apre l'overlay
+postCards.addEventListener("click", (e) => {
+overLay.classList.remove('d-none');
+}
+)
+
+// al click sul button l'overlay torna in d-none
+button.addEventListener("click", (e) => {
+overLay.classList.add('d-none');
+})
+
