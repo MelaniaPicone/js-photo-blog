@@ -17,7 +17,7 @@ for (let i=0; i<6 ; i++){
 // modifica html interno con tag riferiti all'API e ai dati recuperati con postman
 postCards.innerHTML += `
 <div class="col-sm-12 col-md-6 col-lg-4 mt-4 mb-3">
-<div class="card mx-auto p-2 border-shadow" style="width: 250px;">
+<div class="card mt-4 mx-auto p-2 border-shadow" style="width: 250px;">
 
   <img src="./assets/img/pin.svg" class="pin">
   <img src="${travelCards[i].url}" class="img img-fluid card-img" alt="immagine">

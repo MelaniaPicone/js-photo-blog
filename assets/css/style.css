@@ -41,26 +41,42 @@ background-size: 80%;
 
 .card {
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
+
+.card:hover {
+transform: scale(1.1) rotate(10deg);
+}
+
+
 
 /* card style */
 
 .border-shadow {
-box-shadow: 3px 5px 10px #000;
+box-shadow: 3px 5px 10px 2px #000;
  border-radius: 0 !important;
+}
+
+.border-shadow:hover {
+  box-shadow: 5px 10px 10px 4px #000;
 }
 
 .row {
   position: relative;
 }
 
-/* elements */
+/* element pin */
 
 .pin {
 position: absolute;
 width: 25px;
 top: -10px;
 left: 115px;
+transition: transform 0.3s ease;
+}
+
+.card:hover .pin {
+display: none;
 }
 
 /* overlay */
@@ -100,4 +116,3 @@ left: 115px;
   cursor: pointer;
   }
 
-  /* hover */
