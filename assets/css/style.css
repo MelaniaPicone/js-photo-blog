@@ -28,8 +28,15 @@ background-size: 80%;
 
 .card p {
   font-family: "Sometype Mono", monospace;
- line-height: 5px;
+ line-height: 0px;
  font-size: 15px;
+}
+
+.card span {
+  font-family: "Edu TAS Beginner", cursive;
+  text-transform: uppercase; 
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .card {
