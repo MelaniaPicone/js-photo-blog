@@ -31,26 +31,24 @@ postCards.innerHTML += `
 `
 }
 
-
-// ad ogni immagine è associata la sua apertura in overlay
-  const allCardImg = document.querySelectorAll('.card-img');
-
-  allCardImg.forEach((e) => {
-    e.addEventListener('click', () => {
-      openPhoto.src = allCardImg.src;
-    });
+// ad ogni immagine è associata la sua apertura nell'overlay
+const allCardImg = document.querySelectorAll('.card-img');
+allCardImg.forEach((img, i) => {
+  img.addEventListener('click', () => {
+    openPhoto.src = travelCards[i].url; 
   });
+});
 
-  // al clic su ogni card si apre l'overlay
+// al clic su ogni card (e solo su quella) si apre l'overlay
 postCards.addEventListener("click", (e) => {
-overLay.classList.remove('d-none');
-}
-)
+  if (e.target.classList.contains('card-img')) {
+    overLay.classList.remove('d-none');
+  }
+});
 
 // al click sul button l'overlay torna in d-none
 button.addEventListener("click", (e) => {
-overLay.classList.add('d-none');
-})
+  overLay.classList.add('d-none');
+});
 
-
-  });
+  })
