@@ -12,7 +12,7 @@ const travelCards = resp.data;
  console.log(travelCards);
 
 // ciclo for degli elementi che sono 6 da lettura con postman
-for (let i=0; i<6 ; i++){
+for (let i=0; i<travelCards.length ; i++){
 
 // modifica html interno con tag riferiti all'API e ai dati recuperati con postman
 postCards.innerHTML += `
